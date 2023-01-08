@@ -20,15 +20,14 @@ public class LandingPageGetFlowG12 extends BasePage {
     @FindBy(xpath = "//input[@class='uw-form-control']")
     private WebElement fullNameRequiredTxt;
 
-    @FindBy(xpath = "//input[@id='password']")
+    @FindBy(xpath = "//input[@id='email']")
     private WebElement email;
 
-    @FindBy(xpath = "//input[@id='password']")
+    @FindBy(xpath = "//input[@id='url']")
     private WebElement websiteUrl;
 
     @FindBy(xpath = "//button[@class='button']")
     private WebElement continueBtn;
-
 
     public LandingPageGetFlowG12 hiTextCheck() {
         waitElementIsVisible(hiText);
@@ -65,5 +64,26 @@ public class LandingPageGetFlowG12 extends BasePage {
         return this;
     }
 
+    public void emailIsVisible() {
+        email.isDisplayed();
+    }
+
+    public LandingPageGetFlowG12 inputEmail(String mail) {
+        waitElementIsVisible(email);
+        email.sendKeys(mail);
+        clickContinue();
+        return this;
+    }
+
+    public void urlIsVisible() {
+        websiteUrl.isDisplayed();
+    }
+
+    public SecondStep inputUrl(String url) {
+        waitElementIsVisible(websiteUrl);
+        websiteUrl.sendKeys(url);
+        clickContinue();
+        return new SecondStep(driver);
+    }
 
 }

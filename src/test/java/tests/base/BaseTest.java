@@ -19,6 +19,7 @@ public class BaseTest {
     @BeforeTest(alwaysRun = true)
     public void checkBrowser() {
         if (HOLD_BROWSER_OPEN) {
+
         } else {
             basePage.open(HOME_PAGE);
         }
