@@ -29,21 +29,18 @@ public class LandingPageGetFlowG12 extends BasePage {
     @FindBy(xpath = "//button[@class='button']")
     private WebElement continueBtn;
 
-    public LandingPageGetFlowG12 hiTextCheck() {
+    public void hiTextCheck() {
         waitElementIsVisible(hiText);
-        hiText.isDisplayed();
-        return this;
+        Assert.assertTrue(hiText.isDisplayed());
     }
 
-    public LandingPageGetFlowG12 fullNameIsVisible() {
-        fullName.isDisplayed();
-        return this;
+    public void fullNameIsVisible() {
+        Assert.assertTrue(fullName.isDisplayed());
     }
 
     public void fullNameIsRequired() {
         waitElementIsVisible(fullNameRequiredTxt);
         Assert.assertEquals(fullNameRequiredTxt.getAttribute("placeholder"), "Full Name (required)");
-
     }
 
     public LandingPageGetFlowG12 inputFullName(String name) {
@@ -65,7 +62,7 @@ public class LandingPageGetFlowG12 extends BasePage {
     }
 
     public void emailIsVisible() {
-        email.isDisplayed();
+        Assert.assertTrue(email.isDisplayed());
     }
 
     public LandingPageGetFlowG12 inputEmail(String mail) {
@@ -76,7 +73,7 @@ public class LandingPageGetFlowG12 extends BasePage {
     }
 
     public void urlIsVisible() {
-        websiteUrl.isDisplayed();
+        Assert.assertTrue(websiteUrl.isDisplayed());
     }
 
     public SecondStep inputUrl(String url) {

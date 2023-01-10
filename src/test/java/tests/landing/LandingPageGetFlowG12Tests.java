@@ -27,7 +27,7 @@ public class LandingPageGetFlowG12Tests extends BaseTest {
         landingPage.inputEmail("anton@gmail.com").urlIsVisible();
     }
     @Test (testName = "checkSecondStepview", priority = 6, groups = {"regression"})
-    public void checkSecondStepview() {
+    public void checkSecondStepView() {
         landingPage.inputUrl("cdn.de").checkViewSecondStep();
     }
 }
