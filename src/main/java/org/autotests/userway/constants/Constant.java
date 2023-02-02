@@ -15,7 +15,7 @@ public class Constant {
     }
 
     public static class Urls {
-        public static final String HOME_PAGE = "https://qa.userway.dev/get?force=g12";
+        public static final String HOME_PAGE = "https://qa.userway.dev/";
 
     }
 

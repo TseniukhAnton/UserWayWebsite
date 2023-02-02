@@ -2,6 +2,7 @@ package tests.base;
 
 import org.autotests.userway.common.CommonActions;
 import org.autotests.userway.pages.base.BasePage;
+import org.autotests.userway.pages.home.HomePage;
 import org.autotests.userway.pages.landing.LandingPageGetFlowG12;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
@@ -15,6 +16,7 @@ public class BaseTest {
     protected WebDriver driver = CommonActions.createDriver();
     protected BasePage basePage = new BasePage(driver);
     protected LandingPageGetFlowG12 landingPage = new LandingPageGetFlowG12(driver);
+    protected HomePage homePage= new HomePage(driver);
 
     @BeforeTest(alwaysRun = true)
     public void checkBrowser() {

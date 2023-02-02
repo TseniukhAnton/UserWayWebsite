@@ -1,0 +1,13 @@
+org\autotests\userway\common\Config.class
+org\autotests\userway\constants\Constant$Urls.class
+org\autotests\userway\Main.class
+org\autotests\userway\pages\base\BasePage.class
+org\autotests\userway\constants\Constant.class
+org\autotests\userway\constants\Constant$Login.class
+org\autotests\userway\pages\landing\SecondStep.class
+org\autotests\userway\pages\landing\LandingPageGetFlowG12.class
+org\autotests\userway\pages\home\HomePage.class
+org\autotests\userway\helpers\Helper.class
+org\autotests\userway\constants\Constant$NumberVars.class
+org\autotests\userway\constants\Constant$TimeoutVariable.class
+org\autotests\userway\common\CommonActions.class
