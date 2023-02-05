@@ -22,6 +22,8 @@ bin/
 
 ### IntelliJ IDEA ###
 .idea
+*.db
+*.log
 *.iws
 *.iml
 *.ipr
