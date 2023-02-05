@@ -23,7 +23,7 @@ bin/
 ### IntelliJ IDEA ###
 .idea
 *.db
-*.log//
+*.log
 *.iws
 *.iml
 *.ipr
